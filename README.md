@@ -1,6 +1,6 @@
-= WebStorm / PhpStorm IDE settings
+= WebStorm / PhpStorm IDE settings =
 
-== Dark color theme for JetBrains products (phpstorm, webstorm)
+== Dark color theme for JetBrains products (phpstorm, webstorm) ==
 
 Hi there. Here you can find my personal settings for the phpStorm/webStorm IDEs.Everyone can use them for free and share among other developers :)
 
@@ -10,6 +10,6 @@ Hi there. Here you can find my personal settings for the phpStorm/webStorm IDEs.
 Here is an example of the color theme:
 (js file, html, css)
 
-![dark color theme for phpstorm, webstorm, intellijidea. Javascript colors, css colors, html colors](http://http://i.imgur.com/9OIsu1S.png)
+![dark color theme for phpstorm, webstorm, intellijidea. Javascript colors, css colors, html colors](http://i.imgur.com/9OIsu1S.png)
 
 _I didn't modified colors for some languages, e.g. CoffeeScript, HAML
