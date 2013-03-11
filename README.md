@@ -1,6 +1,6 @@
-= WebStorm / PhpStorm IDE settings =
+# WebStorm / PhpStorm IDE settings #
 
-== Dark color theme for JetBrains products (phpstorm, webstorm) ==
+## Dark color theme for JetBrains products (phpstorm, webstorm) ##
 
 Hi there. Here you can find my personal settings for the phpStorm/webStorm IDEs.Everyone can use them for free and share among other developers :)
 
