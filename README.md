@@ -2,7 +2,10 @@
 
 This scheme can be used with any JetBrains product, e.g. PhpStorm, WebStorm, IDEA, etc.
 
-To install, please download .jar settings file and go to "File -&gt; Import Settings...". When imported it might be required to switch the scheme in the settings.
+After downloading .jar settings file, go to "File -&gt; Import Settings...". 
+
+* `dark_milky_all_settings_sublimeye_phpstorm_01-oct-2013.jar` contains all IDE settings
+* `dark_milky_color_schemes_sublimeye_phpstorm_01-oct-2013.jar` contains color scheme only
 
 Example:
 (Javascript, HTML, CSS example)
