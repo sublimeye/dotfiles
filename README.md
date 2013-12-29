@@ -1,15 +1,14 @@
-# WebStorm / PhpStorm IDE settings #
+# Dark Milky Color Scheme for JetBrains IDE #
 
-## Dark color theme for JetBrains products (phpstorm, webstorm) ##
+This scheme can be used with any JetBrains product, e.g. PhpStorm, WebStorm, IDEA, etc.
 
-Hi there. Here you can find my personal settings for the phpStorm/webStorm IDEs.Everyone can use them for free and share among other developers :)
+To install, please download .jar settings file and go to "File -&gt; Import Settings...". When imported it might be required to switch the scheme in the settings.
 
-- sublimeye_settings.jar contains all settings for the IDE (incl. code style, live templates, File Types etc)
-- sublimeye_settings[dark_color_theme_1.0].jar contains only color theme settings. It's a nice dark color theme. It's partially based on Monokai theme plus a lot of my own preferences.
-
-Here is an example of the color theme:
-(js file, html, css)
+Example:
+(Javascript, HTML, CSS example)
 
 ![dark color theme for phpstorm, webstorm, intellijidea. Javascript colors, css colors, html colors](http://i.imgur.com/9OIsu1S.png)
 
-_I didn't modified colors for some languages, e.g. CoffeeScript, HAML
+![dark color theme for phpstorm, webstorm, intellijidea. Javascript colors, css colors, html colors](http://i.imgur.com/61xHxAM.png)
+
+I didn't modify colors of some languages, like CoffeeScript, HAML.
