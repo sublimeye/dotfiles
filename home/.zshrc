@@ -4,7 +4,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin":/usr/local/bin:$PATH
+export PATH="$HOME/bin:/Applications/Visual\ Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:$PATH"
 export BLOCKSIZE=1k
 
 # Path to your oh-my-zsh installation.
@@ -13,6 +13,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 
 alias ls='ls -GFAhpt'
 alias ll='ls -FGlAhpt'
+alias npmr="nocorrect npm run"
 
 git config --global alias.undo 'reset --soft HEAD^'
 
