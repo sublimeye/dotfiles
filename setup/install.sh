@@ -85,8 +85,8 @@ echo osx: Require password as soon as screensaver or sleep mode starts
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo osx: Show filename extensions by default
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# echo osx: Show filename extensions by default
+# defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 echo osx: Enable tap-to-click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
