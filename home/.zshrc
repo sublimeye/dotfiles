@@ -1,15 +1,21 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/zsh-syntax-highlighting/highlighters
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
 . `brew --prefix`/etc/profile.d/z.sh
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
+
+if [ -f $HOME/.bashrc ]; then
+	source $HOME/.bashrc
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/bin:/Applications/Visual\ Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:/Applications/Visual\ Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/local/go/bin:$PATH"
 export BLOCKSIZE=1k
-
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/morozor/.oh-my-zsh"
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
 alias ls='ls -GFAhpt'
 alias ll='ls -FGlAhpt'
@@ -19,11 +25,6 @@ git config --global alias.undo 'reset --soft HEAD^'
 
 # cjq a simple curl + json prettyfier alias
 cjq () { curl "$@" | jq; }
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -55,7 +56,7 @@ ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -82,33 +83,4 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+source /Users/sublimeye/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
