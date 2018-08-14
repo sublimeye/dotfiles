@@ -20,6 +20,7 @@ export BLOCKSIZE=1k
 alias ls='ls -GFAhpt'
 alias ll='ls -FGlAhpt'
 alias npmr="nocorrect npm run"
+alias r="nocorrect npm run"
 
 git config --global alias.undo 'reset --soft HEAD^'
 
