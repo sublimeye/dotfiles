@@ -13,7 +13,9 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 
 alias ls='ls -GFAhpt'
 alias ll='ls -FGlAhpt'
-alias npmr="nocorrect npm run"
+alias r="nocorrect npm run"
+alias killmcafee='cd /Library/LaunchDaemons && sudo launchctl unload com.mcafee.agent.macmn.plist && cd -'
+alias killmcafeeeos="sudo /usr/local/McAfee/AntiMalware/VSControl stopoas"
 
 git config --global alias.undo 'reset --soft HEAD^'
 
