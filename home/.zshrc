@@ -86,4 +86,4 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/sublimeye/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /Users/sublimeye/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
