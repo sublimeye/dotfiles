@@ -39,6 +39,15 @@ if test ! $(which brew); then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+echo "You need to install oh-my-zsh... TODO: needs to be fixed so that script does not exit when installation finishes"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+if [[ ! -d $HOME/zsh-syntax-highlighting ]]
+then
+    echo "Installing zsh-syntax-highlighting into home directory"
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/zsh-syntax-highlighting
+fi
+
 # Update homebrew recipes
 echo "Running brew update"
 brew update
@@ -55,8 +64,8 @@ brew update
 # # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 # brew install findutils
 
-/bin/bash ./install-brew-packages.sh
-/bin/bash ./install-cask-packages.sh
+/bin/bash ./setup/install-brew-packages.sh
+/bin/bash ./setup/install-cask-packages.sh
 
 # echo "Installing fonts..."
 # brew tap caskroom/fonts
@@ -76,6 +85,9 @@ brew update
 # echo "Installing global npm packages..."
 # npm install marked -g
 
+echo "Adding Git Aliasas"
+git config --global alias.undo 'reset --soft HEAD^'
+
 echo "Configuring OSX..."
 
 echo osx: Set fast key repeat rate
@@ -92,12 +104,21 @@ echo osx: Enable tap-to-click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+echo "Enable 3-finger drag. (Moving with 3 fingers in any window \"chrome\" moves the window.)"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
+echo "Enable \"tap-and-a-half\ to drag."
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -int 1
+defaults write com.apple.AppleMultitouchTrackpad Dragging -int 1
+
 if [[ ! -d ~/projects ]]
 then
     echo Creating ~/projects folder
     [[ ! -d ~/projects ]] && mkdir ~/projects
 fi
 
-echo "Warning: Did not copy .zshrc to ~/dir -> do it manually or update this script"
+echo "Creating a symlink for .zsh config file. $PWD/home/.zshrc -> ~/.zshrc"
+ln -s $PWD/home/.zshrc ~/.zshrc
 
 echo "Bootstrapping complete"

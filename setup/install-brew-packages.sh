@@ -5,7 +5,6 @@ PACKAGES=(
     ack
     jq
     z
-    zsh-syntax-highlighting
 )
 
 echo "Do you wish to install brew packages [${PACKAGES[*]}]?"
