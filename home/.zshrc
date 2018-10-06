@@ -23,6 +23,8 @@ alias r="nocorrect npm run"
 alias killmcafee='cd /Library/LaunchDaemons && sudo launchctl unload com.mcafee.agent.macmn.plist && cd -'
 alias killmcafeeeos="sudo /usr/local/McAfee/AntiMalware/VSControl stopoas"
 alias port="netstat -vanp tcp | grep "
+alias spotlighton="sudo mdutil -a -i on"
+alias spotlightoff="sudo mdutil -a -i off"
 
 git config --global alias.undo 'reset --soft HEAD^'
 

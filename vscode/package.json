@@ -1,0 +1,22 @@
+{
+    "name": "sublimeye-dark",
+    "displayName": "sublimeye-dark",
+    "description": "SublimeYe's personal dark theme",
+    "version": "0.0.1",
+    "publisher": "sublimeye",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "sublimeye-dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/sublimeye-dark-color-theme.json"
+            }
+        ]
+    }
+}
