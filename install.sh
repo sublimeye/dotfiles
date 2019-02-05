@@ -121,4 +121,7 @@ fi
 echo "Creating a symlink for .zsh config file. $PWD/home/.zshrc -> ~/.zshrc"
 ln -s $PWD/home/.zshrc ~/.zshrc
 
+echo "Codesign node (macOS firewall keeps asking for node permission)"
+sudo codesign --force --sign - $(which node)
+
 echo "Bootstrapping complete"
