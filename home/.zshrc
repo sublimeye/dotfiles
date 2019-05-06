@@ -16,6 +16,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH="$HOME/bin:/Applications/Visual\ Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/local/go/bin:$PATH"
 export BLOCKSIZE=1k
+export ZSH_HIGHLIGHT_MAXLENGTH=60
 
 alias ls='ls -GFAhpt'
 alias ll='ls -FGlAhpt'
@@ -47,7 +48,7 @@ cjq () { curl "$@" | jq; }
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
-
+ZSH_DISABLE_COMPFIX=true
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
@@ -87,5 +88,7 @@ plugins=(
   osx
 )
 
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
