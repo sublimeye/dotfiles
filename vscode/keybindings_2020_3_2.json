@@ -163,7 +163,7 @@
         "when": "isTestFile"
     },
     {
-        "key": "cmd+; cmd+j",
+        "key": "shift+cmd+j",
         "command": "workbench.action.focusLeftGroup"
     },
     {
@@ -171,7 +171,7 @@
         "command": "-workbench.action.focusLeftGroup"
     },
     {
-        "key": "cmd+; cmd+k",
+        "key": "shift+cmd+k",
         "command": "workbench.action.focusRightGroup"
     },
     {
